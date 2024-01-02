@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator Segetiga</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <div>
+            <h1 class="judul">
+                <img src="img/kalkulator.png" alt="logo_kalkulator" 
+                style="width: 50px;height: 50px;" align="center">Kalkulator Online</h1>
+
+            <h2 class="sambutan" id="sambutan-1">Selamat datang di kalkulator online.<br>Sebuah web sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</h2>
+
+            <h3 class="credit">Create by Ramy Abiyyu Dhawy</h3>
+        </div>
+        <hr>
+        <div>
+            <form id="myForm">
+                <script src="script.js"></script>
+                
+                <div class="rumus_kel">
+                    <!-- Rumus Keliling -->
+                    <img class="gam" src="img/Rumus Keliling Segitiga.png" alt="logo_kel" style="width: 300px;height: 300px;">
+                    <h2>Menghitung Keliling Segitiga</h2>
+                    <p>Masukan Sisi Pertama : <input type="text" id="s1" class="in"></p>
+                    <p>Masukan Sisi Kedua : <input type="text" id="s2" class="in"></p>
+                    <p>Masukan Sisi Ketiga : <input type="text" id="s3" class="in"></p>
+                
+                    <p>Keliling Segitiga Adalah : <span id="kel"></span></p>
+
+                    <button class="btn" type="button" onclick="kel()">Klik</button>
+                </div>
+
+                <br>
+                
+                <div>
+                    <!-- Rumus Luas -->
+                    <img class="gam" src="img/Rumus Luas Segitiga.png" alt="logo_luas" style="width: 300px;height: 300px;">
+                    <h2>Menghitung Luas Segitiga</h2>
+                    <p>Masukan Alas Segitiga : <input type="text" id="a" class="in"></p>
+                    <p>Masukan Tinggi Segitiga : <input type="text" id="t" class="in"></p>
+
+                    <p>Luas Segitiga Adalah : <span id="luas"></span></p>
+
+                    <button class="btn" type="button" onclick="luas()">Klik</button>
+                </div>
+                <br>
+                <div>
+                    <input type="button" onclick="myFunction()" value="Reset">
+                </div>
+                
+            </form>
+            
+        </div>
+    </body>
+</html>
